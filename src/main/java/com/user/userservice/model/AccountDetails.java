@@ -2,13 +2,11 @@ package com.user.userservice.model;
 
 import com.user.userservice.dataencryption.MaskData;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 @Builder
 public class AccountDetails {
@@ -16,7 +14,7 @@ public class AccountDetails {
 	 @MaskData
 	 private String accountNumber;
 	 private String accountType;
-	public AccountDetails(String accountHolderName, String accountNumber, String accountType) {
+	 public AccountDetails(String accountHolderName, String accountNumber, String accountType) {
 		this.accountHolderName = accountHolderName;
 		this.accountNumber = accountNumber;
 		this.accountType = accountType;
